@@ -43,12 +43,7 @@ header {
     background-color: #ff1493;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 1.5em;
+footer {
     text-align: center;
-}
-
-.hidden {
-    display: none;
+    margin-top: 20px;
 }
