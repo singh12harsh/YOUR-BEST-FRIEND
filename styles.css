@@ -13,25 +13,24 @@ header {
     text-align: center;
 }
 
-main {
+#userInput {
     margin: 20px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
+#userInput input, #userInput select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#userInput button {
     background-color: #ff69b4;
     color: white;
     border: none;
@@ -40,7 +39,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+#userInput button:hover {
     background-color: #ff1493;
 }
 
@@ -52,23 +51,6 @@ button:hover {
 
 .hidden {
     display: none;
-}
-
-#tipsSection {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#tipsList {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#tipsList li {
-    margin: 10px 0; /* Space between tips */
 }
 
 footer {
