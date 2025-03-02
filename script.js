@@ -19,3 +19,42 @@ document.getElementById("loveForm").addEventListener("submit", function(event) {
     resultDiv.classList.remove("hidden");
     resultDiv.innerText = `Details saved! ${name1} and ${name2} are ready to calculate love!`;
 });
+
+
+// Assuming this is part of your existing script.js file
+
+document.getElementById('nextButton').addEventListener('click', function() {
+    const maleName = document.getElementById('maleName').value;
+    const femaleName = document.getElementById('femaleName').value;
+
+    // Show section 2
+    document.getElementById('section2').style.display = 'block';
+    calculateLove(maleName, femaleName);
+});
+
+const calculateLove = (maleName, femaleName) => {
+    const API_URL = `https://love-calculator.p.rapidapi.com/getPercentage?fname=${maleName}&sname=${femaleName}`;
+    
+    fetch(API_URL, {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-host': 'love-calculator.p.rapidapi.com',
+            'x-rapidapi-key': '###############', // Replace with your actual API key
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('result').innerText = `Love Percentage: ${data.percentage}%`;
+    })
+    .catch(err => {
+        console.error(err);
+        document.getElementById('result').innerText = 'Error calculating love percentage.';
+    });
+});
+
+// Restart button functionality
+document.getElementById('restartButton').addEventListener('click', function() {
+    document.getElementById('section2').style.display = 'none';
+    document.getElementById('maleName').value = '';
+    document.getElementById('femaleName').value = '';
+});
