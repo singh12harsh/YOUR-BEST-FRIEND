@@ -13,7 +13,7 @@ header {
     text-align: center;
 }
 
-#userInput {
+#userInput, #result {
     margin: 20px 0;
     padding: 20px;
     background-color: #f9f9f9;
@@ -41,6 +41,10 @@ header {
 
 #userInput button:hover {
     background-color: #ff1493;
+}
+
+#result {
+    display: none;
 }
 
 footer {
