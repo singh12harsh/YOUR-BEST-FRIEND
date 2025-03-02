@@ -16,9 +16,9 @@
         <h2>Enter Your Details</h2>
         <form id="loveForm">
             <input type="text" id="name1" placeholder="Your Name" required>
-            <input type="date" id="dob1" placeholder="Your Date of Birth" required>
+            <input type="date" id="dob1" required>
             <input type="text" id="name2" placeholder="Their Name" required>
-            <input type="date" id="dob2" placeholder="Their Date of Birth" required>
+            <input type="date" id="dob2" required>
             <select id="relationshipType">
                 <option value="friend">Friend</option>
                 <option value="family">Family</option>
@@ -43,6 +43,21 @@
             </select>
             <button type="submit">Calculate Love</button>
         </form>
+    </section>
+
+    <section id="result" style="display: none;">
+        <h2>Love Percentage Result</h2>
+        <p id="lovePercentage"></p>
+        <h3>Tips for Improvement:</h3>
+        <p id="tips"></p>
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard">
+            <li>User A - 95%</li>
+            <li>User B - 90%</li>
+            <li>User C - 85%</li>
+            <li>User D - 80%</li>
+            <li>User E - 75%</li>
+        </ul>
     </section>
 
     <footer>
