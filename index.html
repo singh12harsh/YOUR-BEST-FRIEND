@@ -11,29 +11,30 @@
         <h1>Love Calculator</h1>
         <p>Find out how much love you share with your family, friends, and partners!</p>
     </header>
-    <main>
-        <section>
-            <h2>Enter Your Details</h2>
-            <form id="loveForm">
-                <input type="text" id="name1" placeholder="Your Name" required>
-                <input type="text" id="name2" placeholder="Their Name" required>
-                <button type="submit">Calculate Love</button>
-            </form>
-            <div id="result" class="hidden"></div>
-        </section>
-       </section>
-        
-        <!-- New Tips Section -->
-        <section id="tipsSection">
-            <h2>Relationship Tips</h2>
-            <ul id="tipsList"></ul>
-            <button id="showTipsButton">Show Tips</button>
-        </section>
-        
-    </main>
+
+    <!-- User Input Section -->
+    <section id="userInput">
+        <h2>Enter Your Details</h2>
+        <form id="loveForm">
+            <input type="text" id="name1" placeholder="Your Name" required>
+            <input type="text" id="name2" placeholder="Their Name" required>
+            <input type="date" id="dob1" placeholder="Your Date of Birth" required>
+            <input type="date" id="dob2" placeholder="Their Date of Birth" required>
+            <select id="relationshipType">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="partner">Partner</option>
+            </select>
+            <button type="submit">Calculate Love</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Love Calculator. All rights reserved.</p>
+        <p>&copy; 2025 Love Calculator. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
+        
+   
