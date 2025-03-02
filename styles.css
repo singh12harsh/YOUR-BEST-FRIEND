@@ -53,6 +53,33 @@ header {
     display: none;
 }
 
+#section2 {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#section2 button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#section2 button:hover {
+    background-color: #ff1493;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
 footer {
     text-align: center;
     margin-top: 20px;
