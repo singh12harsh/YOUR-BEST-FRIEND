@@ -3,36 +3,19 @@ document.getElementById("loveForm").addEventListener("submit", function(event) {
 
     const name1 = document.getElementById("name1").value;
     const name2 = document.getElementById("name2").value;
+    const dob1 = document.getElementById("dob1").value;
+    const dob2 = document.getElementById("dob2").value;
+    const relationshipType = document.getElementById("relationshipType").value;
 
-    // Simple love calculation logic (for demonstration purposes)
-    const loveScore = Math.floor(Math.random() * 100) + 1; // Random love score between 1 and 100
+    // Store user details in localStorage
+    localStorage.setItem("name1", name1);
+    localStorage.setItem("name2", name2);
+    localStorage.setItem("dob1", dob1);
+    localStorage.setItem("dob2", dob2);
+    localStorage.setItem("relationshipType", relationshipType);
 
-    // Display the result
+    // Display the result (for now, just log the values)
     const resultDiv = document.getElementById("result");
     resultDiv.classList.remove("hidden");
-    resultDiv.innerHTML = `${name1} and ${name2}, your love score is: <strong>${loveScore}%</strong>`;
-});
-// Existing love calculation code...
-
-// Tips array
-const tips = [
-    "Communicate openly and honestly with each other.",
-    "Spend quality time together, away from distractions.",
-    "Show appreciation for each other regularly.",
-    "Be supportive of each other's goals and dreams.",
-    "Resolve conflicts calmly and respectfully.",
-    "Keep the romance alive with small gestures.",
-    "Listen actively and validate each other's feelings."
-];
-
-// Show tips on button click
-document.getElementById("showTipsButton").addEventListener("click", function() {
-    const tipsList = document.getElementById("tipsList");
-    tipsList.innerHTML = ""; // Clear existing tips
-
-    tips.forEach(tip => {
-        const li = document.createElement("li");
-        li.textContent = tip;
-        tipsList.appendChild(li);
-    });
+    resultDiv.innerText = `Details saved! ${name1} and ${name2} are ready to calculate love!`;
 });
