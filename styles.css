@@ -54,6 +54,23 @@ button:hover {
     display: none;
 }
 
+#tipsSection {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#tipsList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#tipsList li {
+    margin: 10px 0; /* Space between tips */
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
