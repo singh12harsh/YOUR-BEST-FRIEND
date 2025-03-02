@@ -3,89 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Best Friend</title>
+    <title>Love Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-    <meta name="google-site-verification" content="7JT1DfV1BA4f_jjETXBMgGHdnrqoB0QjNpjEGltEyDM" />
-    
-google-site-verification: googleaca3fe3f5057c15a.html
-    
 <body>
     <header>
-        <h1>Welcome to My Special Page!</h1>
+        <h1>Love Calculator</h1>
+        <p>Find out how much love you share with your family, friends, and partners!</p>
     </header>
-    
     <main>
         <section>
-            <h2>About Us</h2>
-            <p>This is a special page dedicated to my girlfriend.</p>
-            <img src="love.jpg" alt="Love" class="responsive-image">
-        </section>
-        <section>
-            <h2>My Love for You</h2>
-            <p>I love you more than words can say!</p>
-        </section>
-        <button id="surpriseButton">Click for a Surprise!</button>
-        <p id="surpriseMessage" style="display:none;">You are amazing!</p>
-        
-        <section>
-            <h2>Favorite Quotes</h2>
-            <blockquote>
-                "You know you're in love when you can't fall asleep because reality is finally better than your dreams." - Dr. Seuss
-            </blockquote>
-        </section>
-        
-        <section>
-    <h2>Our Memories</h2>
-    <ul>
-        <li>First Date: [Date and Place]</li>
-        <li>Anniversary Celebration: [Date and Place]</li>
-        <li>Trip to [Destination]: [Date]</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="image1.jpg" alt="Memory 1" class="gallery-image">
-        <img src="image2.jpg" alt="Memory 2" class="gallery-image">
-        <img src="image3.jpg" alt="Memory 3" class="gallery-image">
-    </div>
-</section>
-
-<section>
-    <h2>Love Calculator</h2>
-    <form id="loveCalculatorForm">
-        <label for="name1">Your Name:</label>
-        <input type="text" id="name1" name="name1" required>
-        
-        <label for="name2">Your Partner's Name:</label>
-        <input type="text" id="name2" name="name2" required>
-        
-        <button type="submit">Calculate Love</button>
-    </form>
-    <p id="loveResult" style="display:none;"></p>
-</section>
-
-        <section>
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
+            <h2>Enter Your Details</h2>
+            <form id="loveForm">
+                <input type="text" id="name1" placeholder="Your Name" required>
+                <input type="text" id="name2" placeholder="Their Name" required>
+                <button type="submit">Calculate Love</button>
             </form>
-            <p id="formMessage" style="display:none;">Thank you for your message!</p>
+            <div id="result" class="hidden"></div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 My Love</p>
+        <p>&copy; 2023 Love Calculator. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
-
